@@ -1,0 +1,273 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "aws_instance.ubuntu-ssh-server (expand)",
+      "shape": "rectangle"
+    },
+    {
+      "id": 2,
+      "name": "aws_key_pair.terraform-key",
+      "shape": "rectangle"
+    },
+    {
+      "id": 3,
+      "name": "module.aws-network-configs.aws_internet_gateway.test-gateway",
+      "shape": "rectangle"
+    },
+    {
+      "id": 4,
+      "name": "module.aws-network-configs.aws_route_table.test-route-table",
+      "shape": "rectangle"
+    },
+    {
+      "id": 5,
+      "name": "module.aws-network-configs.aws_route_table_association.my-subnet-association",
+      "shape": "rectangle"
+    },
+    {
+      "id": 6,
+      "name": "module.aws-network-configs.aws_security_group.test-sg",
+      "shape": "rectangle"
+    },
+    {
+      "id": 7,
+      "name": "module.aws-network-configs.aws_security_group_rule.instance-ssh",
+      "shape": "rectangle"
+    },
+    {
+      "id": 8,
+      "name": "module.aws-network-configs.aws_security_group_rule.outbound-traffic",
+      "shape": "rectangle"
+    },
+    {
+      "id": 9,
+      "name": "module.aws-network-configs.aws_security_group_rule.test-cluster-traffic",
+      "shape": "rectangle"
+    },
+    {
+      "id": 10,
+      "name": "module.aws-network-configs.aws_subnet.test-subnet-a",
+      "shape": "rectangle"
+    },
+    {
+      "id": 11,
+      "name": "module.aws-network-configs.aws_vpc.test-vpc",
+      "shape": "rectangle"
+    },
+    {
+      "id": 12,
+      "name": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+      "shape": "triangle"
+    },
+    {
+      "id": 13,
+      "name": "provider[\"registry.terraform.io/hashicorp/tls\"]",
+      "shape": "triangle"
+    },
+    {
+      "id": 14,
+      "name": "tls_private_key.example",
+      "shape": "rectangle"
+    },
+    {
+      "id": 15,
+      "name": "var.key_pair",
+      "shape": "circle"
+    },
+    {
+      "id": 16,
+      "name": " module.aws-network-configs.output.test-sg-id (expand)",
+      "shape": "circle"
+    },
+    {
+      "id": 17,
+      "name": "module.aws-network-configs.output.test-subnet-a-id (expand)",
+      "shape": "circle"
+    },
+    {
+      "id": 18,
+      "name": "meta.count-boundary (EachMode fixup)",
+      "shape": "circle"
+    },
+    {
+      "id": 19,
+      "name": "module.aws-network-configs (close)",
+      "shape": "circle"
+    },
+    {
+      "id": 20,
+      "name": "module.aws-network-configs (expand)",
+      "shape": "circle"
+    },
+    {
+      "id": 21,
+      "name": "provider[\"registry.terraform.io/hashicorp/aws\"] (close)",
+      "shape": "circle"
+    },
+    {
+      "id": 22,
+      "name": "provider[\"registry.terraform.io/hashicorp/tls\"] (close)",
+      "shape": "circle"
+    },
+    {
+      "id": 23,
+      "name": "root",
+      "shape": "text"
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 16
+    },
+    {
+      "source": 1,
+      "target": 17
+    },
+    {
+      "source": 1,
+      "target": 15
+    },
+    {
+      "source": 2,
+      "target": 12
+    },
+    {
+      "source": 2,
+      "target": 14
+    },
+    {
+      "source": 18,
+      "target": 1
+    },
+    {
+      "source": 18,
+      "target": 2
+    },
+    {
+      "source": 18,
+      "target": 19
+    },
+    {
+      "source": 19,
+      "target": 5
+    },
+    {
+      "source": 19,
+      "target": 7
+    },
+    {
+      "source": 19,
+      "target": 8
+    },
+    {
+      "source": 19,
+      "target": 9
+    },
+    {
+      "source": 19,
+      "target": 16
+    },
+    {
+      "source": 19,
+      "target": 17
+    },
+    {
+      "source": 3,
+      "target": 11
+    },
+    {
+      "source": 4,
+      "target": 3
+    },
+    {
+      "source": 5,
+      "target": 4
+    },
+    {
+      "source": 5,
+      "target": 10
+    },
+    {
+      "source": 6,
+      "target": 11
+    },
+    {
+      "source": 7,
+      "target": 6
+    },
+    {
+      "source": 8,
+      "target": 6
+    },
+    {
+      "source": 9,
+      "target": 6
+    },
+    {
+      "source": 10,
+      "target": 11
+    },
+    {
+      "source": 11,
+      "target": 20
+    },
+    {
+      "source": 11,
+      "target": 12
+    },
+    {
+      "source": 16,
+      "target": 6
+    },
+    {
+      "source": 17,
+      "target": 10
+    },
+    {
+      "source": 21,
+      "target": 1
+    },
+    {
+      "source": 21,
+      "target": 2
+    },
+    {
+      "source": 21,
+      "target": 5
+    },
+    {
+      "source": 21,
+      "target": 7
+    },
+    {
+      "source": 21,
+      "target": 8
+    },
+    {
+      "source": 21,
+      "target": 9
+    },
+    {
+      "source": 22,
+      "target": 14
+    },
+    {
+      "source": 23,
+      "target": 18
+    },
+    {
+      "source": 23,
+      "target": 21
+    },
+    {
+      "source": 23,
+      "target": 22
+    },
+    {
+      "source": 14,
+      "target": 13
+    }
+  ]
+}
